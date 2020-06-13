@@ -2007,6 +2007,16 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
+cron-validator@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/cron-validator/-/cron-validator-1.1.1.tgz#0a27bb75508c7bc03c8b840d2d9f170eeacb5615"
+  integrity sha512-vfZb05w/wezuwPZBDvdIBmJp2BvuJExHeyKRa5oBqD2ZDXR61hb3QgPc/3ZhBEQJlAy8Jlnn5XC/JCT3IDqxwg==
+
+cronstrue@^1.94.0:
+  version "1.94.0"
+  resolved "https://registry.yarnpkg.com/cronstrue/-/cronstrue-1.94.0.tgz#d6e545f14daf43a4b4b00b04614ab9ac637174b7"
+  integrity sha512-DW5OIfJwNGj9R8RCRGsFt0lxp0LKUl6BOElhaNAEkswwihbv6s867oKyOVgh/eQt1z90bBpelWMTR5/mGRB9Hw==
+
 cross-fetch@3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.0.4.tgz#7bef7020207e684a7638ef5f2f698e24d9eb283c"

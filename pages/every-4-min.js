@@ -262,7 +262,7 @@ class InputBox extends Component {
 
         return (
           <div>
-             <NavBar/>
+            <NavBar/>
                   <style jsx>{`
                   #root {
                     overflow: hidden;
@@ -331,12 +331,6 @@ class InputBox extends Component {
                         -ms-flex-pack: center;
                             justify-content: center;
                     font-size: 2vw;
-                  }
-                                    
-                  #ans{
-                    font-size: 3vw;
-                    text-align: center;
-                    font-family: sans-serif;
                   }
                   
                   .main .fas {
@@ -445,6 +439,13 @@ class InputBox extends Component {
                     font-size: 2vw;
                   }
                   
+                  #ans{
+                    font-size: 3vw;
+                    text-align: center;
+                    font-family: sans-serif;
+                  }
+
+                  
                   @media (max-width: 503px) {
                     #ans{
                       font-size: 4vw;
@@ -473,11 +474,11 @@ class InputBox extends Component {
                   `}</style>
             <div className="main">
                 <div className="input-wrapper">
-                <p id="ans">Enter Cron Expression</p>
+                <p id="ans">Every 4 minutes</p>
                     <input
                         id="value"
                         txt={this.state.text}
-                        defaultValue= ''
+                        defaultValue= '*/4 * * * *'
                         type="text"
                         onClick={this.handleClick}
                         onFocus={this.handleSelect}
