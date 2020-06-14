@@ -1,3 +1,15 @@
+# Cron-Generator
+![npm](https://img.shields.io/npm/v/node-readme.svg)
+![license](https://img.shields.io/npm/l/node-readme.svg)
+![github-issues](https://img.shields.io/github/issues/dev2919/Cron-Generator)
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fdev_2919)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fdev2919%2FCron-Generator%2Fblob%2Fmaster%2FREADME.md)
+![React Demo](./demo.gif)
+
+ ## Technologies used
+
+- [React](https://reactjs.org/) single page application
+- Cron parsing using [cronstrue](https://www.npmjs.com/package/cronstrue)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -28,3 +40,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Author
+
+Devesh Pawar <dev2919@gmail.com> http://github.com/dev2919
+
+## License
+
+ - **MIT** : http://opensource.org/licenses/MIT
