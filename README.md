@@ -3,7 +3,7 @@
 ![license](https://img.shields.io/npm/l/node-readme.svg)
 ![github-issues](https://img.shields.io/github/issues/dev2919/Cron-Generator)
 [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fdev_2919)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fdev2919%2FCron-Generator%2Fblob%2Fmaster%2FREADME.md)
-![React Demo](./demo.gif)
+![React Demo](./cron.gif)
 
  ## Technologies used
 
