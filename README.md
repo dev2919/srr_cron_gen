@@ -1,4 +1,4 @@
-# Cron-Generator
+# Cron-Generator (ISOMORPHIC)
 ![npm](https://img.shields.io/npm/v/node-readme.svg)
 ![license](https://img.shields.io/npm/l/node-readme.svg)
 ![github-issues](https://img.shields.io/github/issues/dev2919/Cron-Generator)
