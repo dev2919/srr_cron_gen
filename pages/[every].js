@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { useRouter } from 'next/router'
 import cronstrue from 'cronstrue';
 import {isValidCron} from 'cron-validator'
 import NavBar from '../components/Navbar'
@@ -6,6 +7,35 @@ import NavBar from '../components/Navbar'
 
 
 let c = 0;
+
+//  const ssr = (props) => {
+  
+//   return <div>{props.exp} </div>
+// }
+
+// ssr.getInitialProps = async ({query}) => {
+//   let val = "sefe"
+//   console.log(query);
+
+//   switch (query.every) {
+//     case 'yolo':
+//       val = "every 5 min"
+//       break;
+  
+//     default:
+//       break;
+//   }
+  
+//   return{
+//   exp:val
+//   }
+
+
+// }
+
+// export default ssr;
+
+
 
 
 class InputBox extends Component {
@@ -16,6 +46,70 @@ class InputBox extends Component {
         mobile:false,
     }
 
+    static getInitialProps({query}) {
+      let val = "";
+      let dval = "* * * * *"    
+      switch (query.every) {
+        case 'every-10-minutes':
+          dval = "*/10 * * * *"
+
+          break;
+        case 'every-5-minutes':
+          dval = "*/5 * * * *"
+
+            break;
+        case 'every-minute':
+          dval = "* * * * *"
+
+            break;     
+        case 'every-2-minutes':
+          dval = "*/2 * * * *"
+
+            break;    
+        case 'every-3-minutes':
+          dval = "*/3 * * * *"
+
+          break;
+        case 'every-4-minutes':
+          dval = "*/4 * * * *"
+
+            break;
+        case 'every-15-minutes':
+          dval = "*/15 * * * *"
+
+            break;
+        case 'every-30-minutes':
+        dval = "*/30 * * * *"
+
+            break;
+        case 'every-12-hours':
+        dval = "* */12 * * *"
+
+            break;
+        case 'every-week':
+        dval = "0 0 * * 0"
+
+            break;            
+
+        case 'every-year':
+        dval = "0 0 1 1 *"
+
+            break;               
+        default:
+          dval = "*/5 * * * *"
+          break;
+      }
+      
+      return{
+      mchar:val,
+      def:dval
+      }
+    
+    
+    }
+    
+
+    // const router =useRouter()
 
 
     componentDidMount = () => {
@@ -474,11 +568,11 @@ class InputBox extends Component {
                   `}</style>
             <div className="main">
                 <div className="input-wrapper">
-                <p id="ans">Every minute</p>
+                <p id="ans">{cronstrue.toString(this.props.def)}</p>
                     <input
                         id="value"
                         txt={this.state.text}
-                        defaultValue= '* * * * *'
+                        defaultValue= {this.props.def}
                         type="text"
                         onClick={this.handleClick}
                         onFocus={this.handleSelect}

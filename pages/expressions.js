@@ -221,24 +221,30 @@ class Expressions extends Component {
                 <div className="links-main">
                     <ul>
 
-                    <a href="/every-5-min">
+                    <a href="/every-5-minutes">
                             <li>Every 5-minute</li>
                         </a>
-                        <a href="/every-10-min">
+                        <a href="/every-10-minutes">
                             <li>Every 10-minute</li>
                         </a>
                         <a href="/every-minute">
                             <li>Every minute</li>
                         </a>
-                        <a href="/every-2-min">
+                        <a href="/every-2-minutes">
                             <li>Every 2-minute</li>
                         </a>
-                        <a href="/every-3-min">
+                        <a href="/every-2-minutes">
                             <li>Every 3-minute</li>
                         </a>
-                        <a href="/every-4-min">
+                        <a href="/every-4-minutes">
                             <li>Every 4-minute</li>
                         </a>
+                        <a href="/every-15-minutes">
+                            <li>Every 15 minute</li>
+                        </a>
+                        <a href="/every-30-minutes">
+                            <li>Every 30 minute</li>
+                        </a>                        
                         
 </ul>
                 </div>
